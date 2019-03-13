@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EasyDapp</title>
+</head>
+
+<body>
+    <a href="https://rinkeby.etherscan.io/address/0xfcc669b894c84cb339999c2e890d841cfc9ff7a9">Etherscan records for this contract</a>
+<h4>Note:</h4>
+    <ol>
+        <li>You need to install Metamask and have some Eth inside the wallet to set variable and transfer ETH.</li>
+        <li>Each transaction may take between 15-30 seconds, please do wait before clicking Get message/Get result
+        button again.</li>
+    </ol>
+
+    <h2>Set and Get message</h2>
+    Set message: <input id="message" type="text" />
+    <br />
+    <button onClick="setMessage();">Set message</button>
+    <button onClick="getMessage();">Get message</button>
+    <p>Current message: <span id="currentMessage"></span></p>
+    <p>TxHash for setMessage():<span id="txMessage"> </span></p>
+
+    <h2>Number operations</h2>
+    Number 1: <input id="num1" type="number" />
+    <br />
+    Number 2: <input id="num2" type="number" />
+
+    <br />
+    <button onClick="add();">Add both number</button>
+    <button onClick="multiply();">Multiply both number</button>
+
+    <button onClick="getResult();">Get result</button>
+    <br/>
+    <p>Current result: <span id="currentResult"></span></p>
+    <p>TxHash for add(): <span id="addTx"></span></p>
+    <p>TxHash for multiply():<span id="multiplyTx"> </span></p>
+
+    <h2>Eth transfer</h2>
+    Recipient's wallet address: <input id="walletAddress" type="text" />
+    Amount (in WEI): <input id="amount" type="number" />    <button onClick="transfer();">Transfer</button>
+
+    <br/>
+    TxHash for transfer():<span id="transferTx"> </span>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
